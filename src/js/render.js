@@ -3,6 +3,7 @@ import debounce from "lodash.debounce";
 import apiService from "./apiService.js";
 import refs from "./refs.js";
 import template from "../templates/template.hbs";
+import singUp from "./singUp.js"
 
 refs.searchInput.addEventListener("input", debounce(e => {
     refs.cocktailList.innerHTML = ""
@@ -31,3 +32,5 @@ function renderApi(data) {
         }
     })
 }
+
+
